@@ -220,7 +220,7 @@ footer {
 
 /* Estilo para as fotos da linha do tempo */
 .foto-memoria {
-    width: 100%; /* Faz a foto ocupar a largura total do cartão */
+    width: auto; /* Faz a foto ocupar a largura total do cartão */
     height: auto;
     max-height: 350px; /* Impede que fotos verticais fiquem gigantes */
     object-fit: cover; /* Corta a imagem suavemente para não achatar */
