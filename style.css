@@ -217,3 +217,14 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+/* Estilo para as fotos da linha do tempo */
+.foto-memoria {
+    width: 100%; /* Faz a foto ocupar a largura total do cartão */
+    height: auto;
+    max-height: 350px; /* Impede que fotos verticais fiquem gigantes */
+    object-fit: cover; /* Corta a imagem suavemente para não achatar */
+    border-radius: 8px; /* Arredonda as pontas */
+    margin-bottom: 15px; /* Dá um espaço entre a foto e o texto abaixo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adiciona uma sombra leve na foto */
+}
