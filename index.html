@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trajetória Escolar - Terceirão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Formandos</div>
+            <ul class="nav-links">
+                <li><a href="#memorias">Memórias Escolares</a></li>
+                <li><a href="#redacoes">Portfólio de Redações</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Nossa Jornada Escolar</h1>
+            <p>Do Jardim de Infância à Conclusão do Ensino Médio</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção 1: Memórias Escolares -->
+        <section id="memorias" class="section-container">
+            <h2>Memórias Escolares</h2>
+            <p class="section-desc">Um resgate cronológico das nossas histórias, desafios e momentos inesquecíveis.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Jardim de Infância / Pré-escola</h3>
+                        <p class="date">Ano Inicial</p>
+                        <div class="media-placeholder">[Insira Foto Aqui]</div>
+                        <p>Adicione aqui os relatos, primeiros amigos, causos marcantes e curiosidades desta fase.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ensino Fundamental I (1º ao 5º ano)</h3>
+                        <p class="date">Anos Iniciais</p>
+                        <div class="media-placeholder">[Insira Foto Aqui]</div>
+                        <p>Adicione aqui o desenvolvimento da alfabetização, brincadeiras e desafios superados.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ensino Fundamental II (6º ao 9º ano)</h3>
+                        <p class="date">Anos Finais</p>
+                        <div class="media-placeholder">[Insira Foto Aqui]</div>
+                        <p>Adicione aqui as mudanças, novas disciplinas, viagens escolares e amizades fortalecidas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ensino Médio (1º ao 3º ano)</h3>
+                        <p class="date">A Reta Final</p>
+                        <div class="media-placeholder">[Insira Foto Aqui]</div>
+                        <p>Adicione aqui a preparação para o futuro, o terceirão, micos, formaturas e a conclusão deste ciclo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Portfólio de Redações -->
+        <section id="redacoes" class="section-container bg-light">
+            <h2>Portfólio de Redações</h2>
+            <p class="section-desc">Produções literárias e textuais desenvolvidas ao longo das aulas de Língua Portuguesa e Redação.</p>
+            
+            <div class="accordion-container">
+                <!-- O HTML gera 15 itens sanfonados para as redações -->
+                <script>
+                    for(let i = 1; i <= 15; i++) {
+                        document.write(`
+                            <button class="accordion">Redação ${i}: [Insira o Título da Redação Aqui]</button>
+                            <div class="panel">
+                                <p><strong>Tema:</strong> [Insira o Tema]</p>
+                                <p><strong>Data:</strong> [Insira a Data]</p>
+                                <p><em>Cole o texto completo da redação ${i} aqui. O layout sanfonado manterá a página limpa e organizada, permitindo que o leitor expanda apenas o texto que deseja ler.</em></p>
+                            </div>
+                        `);
+                    }
+                </script>
+                <!-- Caso prefira sem Javascript no HTML, basta copiar o bloco <button> e <div class="panel"> 15 vezes -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Site dos Formandos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
