@@ -1,10 +1,10 @@
-/* Variáveis de Cores (Fáceis de alterar depois) */
+/* Variáveis de Cores (Tema Azul) */
 :root {
-    --primary-color: #1518ce;
-    --secondary-color: #044c7c;
-    --bg-color: #171adb;
+    --primary-color: #0b4e9e; /* Azul principal solicitado */
+    --secondary-color: #3498db; /* Azul claro para contrastes e detalhes */
+    --bg-color: #f4f7f6; /* Fundo levemente frio/azulado */
     --text-color: #333;
-    --light-gray: #171adb;
+    --light-gray: #e8eff5; /* Cinza com subtom azulado para caixas e fundos claros */
 }
 
 /* Reset Básico */
@@ -24,7 +24,7 @@ body {
 /* Navegação e Cabeçalho */
 header {
     background-color: var(--primary-color);
-    color: rgb(48, 59, 219);
+    color: white;
 }
 
 nav {
@@ -59,7 +59,8 @@ nav .nav-links a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(#3238f3, #3238f3), url('placeholder-bg.jpg') center/cover;
+    /* Gradiente atualizado para o RGB do azul principal (#0b4e9e = 11, 78, 158) */
+    background: linear-gradient(rgba(11, 78, 158, 0.9), rgba(11, 78, 158, 0.9)), url('placeholder-bg.jpg') center/cover;
 }
 
 .hero h1 {
@@ -151,8 +152,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #999;
-    border: 2px dashed #bdc3c7;
+    color: #8899a6;
+    border: 2px dashed #9fb3c8;
     margin-bottom: 15px;
     border-radius: 5px;
 }
@@ -192,7 +193,7 @@ h2 {
 }
 
 .active, .accordion:hover {
-    background-color: #ddd;
+    background-color: #d4e1ec; /* Efeito hover ajustado para o tema azul */
 }
 
 .panel {
