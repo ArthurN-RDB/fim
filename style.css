@@ -2,8 +2,8 @@
 :root {
     --primary-color: #0b4e9e; /* Azul principal */
     --secondary-color: #3498db; /* Azul vibrante para contrastes e detalhes */
-    --bg-color: #e4eff8; /* Fundo geral da página (azul bem claro) */
-    --element-bg: #cce0f2; /* Fundo dos cards e parte interna das abas (substitui o branco) */
+    --bg-color: #0b0255; /* Fundo geral da página (azul bem claro) */
+    --element-bg: #1d7cd1; /* Fundo dos cards e parte interna das abas (substitui o branco) */
     --tab-bg: #a6cced; /* Fundo das abas/botões fechados */
     --tab-hover: #8ebde6; /* Cor da aba ao passar o mouse ou quando ativa */
     --text-color: #1a2a3a; /* Texto escuro com subtom azul para leitura suave */
@@ -61,7 +61,7 @@ nav .nav-links a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(rgba(11, 78, 158, 0.9), rgba(11, 78, 158, 0.9)), url('placeholder-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0, 53, 117, 0.9), rgba(11, 78, 158, 0.9)), url('placeholder-bg.jpg') center/cover;
 }
 
 .hero h1 {
