@@ -4,7 +4,7 @@
     --secondary-color: #044c7c;
     --bg-color: #0004ff;
     --text-color: #333;
-    --light-gray: #00ccff;
+    --light-gray: #006eff;
 }
 
 /* Reset Básico */
@@ -24,7 +24,7 @@ body {
 /* Navegação e Cabeçalho */
 header {
     background-color: var(--primary-color);
-    color: rgb(45, 58, 245);
+    color: rgb(48, 59, 219);
 }
 
 nav {
@@ -59,7 +59,7 @@ nav .nav-links a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(#d7d8f1, #d7d8f1), url('placeholder-bg.jpg') center/cover;
+    background: linear-gradient(#3238f3, #3238f3), url('placeholder-bg.jpg') center/cover;
 }
 
 .hero h1 {
