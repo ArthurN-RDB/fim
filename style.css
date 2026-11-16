@@ -1,12 +1,12 @@
-/* Variáveis de Cores (Tema Totalmente Azul) */
+/* Variáveis de Cores (Paleta Baseada em Azul) */
 :root {
-    --primary-color: #0b4e9e; /* Azul principal */
-    --secondary-color: #3498db; /* Azul vibrante para contrastes e detalhes */
-    --bg-color: #0b0255; /* Fundo geral da página (azul bem claro) */
-    --element-bg: #1d7cd1; /* Fundo dos cards e parte interna das abas (substitui o branco) */
-    --tab-bg: #a6cced; /* Fundo das abas/botões fechados */
-    --tab-hover: #8ebde6; /* Cor da aba ao passar o mouse ou quando ativa */
-    --text-color: #000000; /* Texto escuro com subtom azul para leitura suave */
+    --primary-color: #0a1f89; /* Azul escuro principal solicitado */
+    --bg-color: #030a2e; /* Azul noturno para o fundo geral */
+    --card-bg: #112aa8; /* Azul médio para cartões e sanfonas */
+    --card-bg-hover: #1534c9; /* Azul mais claro para hover */
+    --accent-color: #5ea4ff; /* Azul claro/vibrante para destaques, links e botões */
+    --text-main: #eef4ff; /* Branco azulado para textos principais */
+    --text-muted: #9ab9ff; /* Azul claro acinzentado para descrições */
 }
 
 /* Reset Básico */
@@ -19,14 +19,15 @@
 
 body {
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-main);
     line-height: 1.6;
 }
 
 /* Navegação e Cabeçalho */
 header {
-    background-color: var(#a6d6ed);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-main);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 nav {
@@ -39,6 +40,7 @@ nav {
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--accent-color);
 }
 
 nav .nav-links {
@@ -48,30 +50,26 @@ nav .nav-links {
 }
 
 nav .nav-links a {
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav .nav-links a:hover {
-    color: var(--tab-bg);
+    color: var(--accent-color);
 }
 
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(rgba(0, 53, 117, 0.9), rgba(11, 78, 158, 0.9)), url('placeholder-bg.jpg') center/cover;
+    background: linear-gradient(rgba(10, 31, 137, 0.85), rgba(3, 10, 46, 0.95)), url('placeholder-bg.jpg') center/cover;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: white;
-}
-
-.hero p {
-    color: var(--element-bg);
+    color: var(--accent-color);
 }
 
 /* Containers Gerais */
@@ -81,22 +79,24 @@ nav .nav-links a:hover {
     margin: 0 auto;
 }
 
+/* Reaproveitando a classe bg-light do HTML, mas aplicando tom de azul */
 .bg-light {
-    background-color: var(--element-bg); /* Substituiu o fundo branco da seção de redações */
+    background-color: var(--primary-color);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(11, 78, 158, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #132eaf;
 }
 
 h2 {
     text-align: center;
-    color: var(#a6d6ed);
+    color: var(--accent-color);
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .section-desc {
     text-align: center;
-    color: #3b5b7a; /* Cinza azulado para subtítulos */
+    color: var(--text-muted);
     margin-bottom: 40px;
 }
 
@@ -113,7 +113,7 @@ h2 {
     left: 20px;
     height: 100%;
     width: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 .timeline-item {
@@ -128,41 +128,41 @@ h2 {
     top: 5px;
     width: 20px;
     height: 20px;
-    background-color: var(--element-bg); /* Substituiu o branco da bolinha */
-    border: 4px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    border: 4px solid var(--accent-color);
     border-radius: 50%;
     z-index: 1;
 }
 
 .timeline-content {
-    background: var(--element-bg); /* Substituiu o card branco */
+    background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(11, 78, 158, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--primary-color);
 }
 
 .timeline-content h3 {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .timeline-content .date {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--text-muted);
     margin-bottom: 10px;
 }
 
 .media-placeholder {
     width: 100%;
     height: 200px;
-    background-color: var(--tab-bg);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
-    border: 2px dashed var(--primary-color);
+    color: var(--text-muted);
+    border: 2px dashed var(--accent-color);
     margin-bottom: 15px;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 /* Leitor Sanfonado (Portfólio de Redações) */
@@ -171,17 +171,17 @@ h2 {
 }
 
 .accordion {
-    background-color: var(--tab-bg); /* Abas agora são num azul médio */
-    color: var(--primary-color);
+    background-color: var(--card-bg);
+    color: var(--text-main);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    border: 1px solid var(--primary-color);
     text-align: left;
     outline: none;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: 0.4s;
+    transition: background-color 0.4s;
     border-radius: 5px;
     margin-bottom: 5px;
     display: flex;
@@ -192,7 +192,7 @@ h2 {
 .accordion:after {
     content: '\002B'; /* Sinal de Mais */
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .active:after {
@@ -200,21 +200,27 @@ h2 {
 }
 
 .active, .accordion:hover {
-    background-color: var(--tab-hover); /* Azul um pouco mais escuro no hover/ativo */
+    background-color: var(--card-bg-hover);
 }
 
 .panel {
     padding: 0 18px;
-    background-color: var(--element-bg); /* Fundo da redação num azul bem claro, substitui o branco */
+    background-color: #0d228f; /* Tom intermediário para o interior da sanfona */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid var(--accent-color);
     margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
 }
 
 .panel p {
     margin: 15px 0;
+    color: var(--text-main);
+}
+
+.panel strong {
+    color: var(--accent-color);
 }
 
 /* Rodapé */
@@ -222,8 +228,9 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-muted);
     margin-top: 40px;
+    border-top: 1px solid var(--card-bg);
 }
 /* Estilo para as fotos da linha do tempo */
 .foto-memoria {
