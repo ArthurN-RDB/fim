@@ -6,7 +6,7 @@
     --element-bg: #1d7cd1; /* Fundo dos cards e parte interna das abas (substitui o branco) */
     --tab-bg: #a6cced; /* Fundo das abas/botões fechados */
     --tab-hover: #8ebde6; /* Cor da aba ao passar o mouse ou quando ativa */
-    --text-color: #1a2a3a; /* Texto escuro com subtom azul para leitura suave */
+    --text-color: #000000; /* Texto escuro com subtom azul para leitura suave */
 }
 
 /* Reset Básico */
@@ -25,7 +25,7 @@ body {
 
 /* Navegação e Cabeçalho */
 header {
-    background-color: var(--primary-color);
+    background-color: var(#a6d6ed);
     color: white;
 }
 
