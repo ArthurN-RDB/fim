@@ -2,9 +2,9 @@
 :root {
     --primary-color: #1518ce;
     --secondary-color: #044c7c;
-    --bg-color: #f9f9f9;
+    --bg-color: #0004ff;
     --text-color: #333;
-    --light-gray: #ecf0f1;
+    --light-gray: #00ccff;
 }
 
 /* Reset Básico */
@@ -59,7 +59,7 @@ nav .nav-links a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(#1518ce, #1518ce), url('placeholder-bg.jpg') center/cover;
+    background: linear-gradient(#d7d8f1, #d7d8f1), url('placeholder-bg.jpg') center/cover;
 }
 
 .hero h1 {
